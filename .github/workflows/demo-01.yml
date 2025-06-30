@@ -18,7 +18,7 @@ on:
         required: true
         default: "dbserver1"
         type: string
-      customer_evn:
+      customer_env:
         type: choice
         options: [ "Belgium", "Holland", "France" ]
         default: France
