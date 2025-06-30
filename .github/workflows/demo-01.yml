@@ -14,6 +14,9 @@ on:
   workflow_dispatch:
     inputs:
       server:
+        description: "Entrer sever name"
+        required: true
+        default: "dbserver1"
         type: string
 
   schedule:
