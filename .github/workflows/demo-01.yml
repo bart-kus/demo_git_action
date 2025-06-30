@@ -35,4 +35,3 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo $(1/0)
-          exit 1
