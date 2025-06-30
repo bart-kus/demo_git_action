@@ -18,6 +18,13 @@ on:
         required: true
         default: "dbserver1"
         type: string
+      customer_evn:
+        type: choice
+        options:
+          - Belgium
+          - Holland
+          - France
+        default: France
 
   schedule:
     - cron: "*/5 * * * *"
