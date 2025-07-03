@@ -44,7 +44,9 @@ jobs:
         chmod 777 ./echo_new3.sh
         ./echo_new3.sh
   # ... other steps
-
+    
+    - name: "who am I"
+      run: whoami
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       
