@@ -35,14 +35,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-      - run: pwd
-      - name: listing before
-        run: ls -lR
-      - name: "running echo"
-        run: |
-          chmod 777 ./echo_new3.sh
-          ./echo_new3.sh
+    - uses: actions/checkout@v4         # <-- This must be first!
+    - run: pwd
+    - name: listing before
+      run: ls -lR
+    - name: "running echo"
+      run: |
+        chmod 777 ./echo_new3.sh
+        ./echo_new3.sh
+  # ... other steps
 
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
