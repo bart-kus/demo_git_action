@@ -5,6 +5,7 @@ on:
     paths:
       - "py-upper/**"
       - ".github/workflows/python-uppercase.yml"
+      - ".github/workflows/python-uppercase.yaml"
  
 jobs:
   build:
